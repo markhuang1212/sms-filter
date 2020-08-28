@@ -63,7 +63,7 @@ struct ContentView: View {
                 ToolbarItem(placement: .bottomBar) {
                     HStack {
                         Spacer()
-                        Button("Add Item") {
+                        Button("Add Filter Item") {
                             isShowingSheet.toggle()
                         }
                         Spacer()
@@ -74,7 +74,7 @@ struct ContentView: View {
                 NavigationView {
                     Form {
                         Section{
-                            TextField("Word to filter", text: $newWord)
+                            TextField("Word to Filter", text: $newWord)
                         }
                         Section{
                             Button("Add"){
@@ -90,7 +90,7 @@ struct ContentView: View {
                             .foregroundColor(.red)
                         }
                     }
-                    .navigationTitle("Add a word")
+                    .navigationTitle("New Filter")
                     .navigationBarTitleDisplayMode(.inline)
                 }
             })
