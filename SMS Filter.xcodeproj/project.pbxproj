@@ -54,6 +54,7 @@
 		866EECCE24F7603D00DE4526 /* MessageFilterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFilterExtension.swift; sourceTree = "<group>"; };
 		866EECD024F7603D00DE4526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		866EED0924F7650200DE4526 /* SMS Filter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SMS Filter.entitlements"; sourceTree = "<group>"; };
+		866EED0A24F7791800DE4526 /* SMS Filter Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SMS Filter Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +119,7 @@
 		866EECCD24F7603D00DE4526 /* SMS Filter Extension */ = {
 			isa = PBXGroup;
 			children = (
+				866EED0A24F7791800DE4526 /* SMS Filter Extension.entitlements */,
 				866EECCE24F7603D00DE4526 /* MessageFilterExtension.swift */,
 				866EECD024F7603D00DE4526 /* Info.plist */,
 			);
@@ -425,6 +427,7 @@
 		866EECD524F7603D00DE4526 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "SMS Filter Extension/SMS Filter Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87RPRRD94N;
 				INFOPLIST_FILE = "SMS Filter Extension/Info.plist";
@@ -444,6 +447,7 @@
 		866EECD624F7603D00DE4526 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "SMS Filter Extension/SMS Filter Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87RPRRD94N;
 				INFOPLIST_FILE = "SMS Filter Extension/Info.plist";

@@ -71,26 +71,28 @@ struct ContentView: View {
                 }
             })
             .sheet(isPresented: $isShowingSheet, content: {
-                VStack(alignment:.center) {
-                    TextField("Word to filter", text: $newWord)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .frame(maxWidth: 200)
-                    Button(action: {
-                        words.append(newWord)
-                        data = try! JSONEncoder().encode(words)
-                        isShowingSheet.toggle()
-                        newWord = ""
-                    }){
-                        Text("OK")
-                            .padding(7)
-                            .frame(maxWidth: 200)
-                            .foregroundColor(.white)
-                            .background(Color(.systemIndigo))
-                            .clipShape(RoundedRectangle(cornerRadius:8))
+                NavigationView {
+                    Form {
+                        Section{
+                            TextField("Word to filter", text: $newWord)
+                        }
+                        Section{
+                            Button("Add"){
+                                words.append(newWord)
+                                data = try! JSONEncoder().encode(words)
+                                isShowingSheet.toggle()
+                                newWord = ""
+                            }
+                            .disabled(newWord.isEmpty)
+                            Button("Cancel"){
+                                isShowingSheet.toggle()
+                            }
+                            .foregroundColor(.red)
+                        }
                     }
-
+                    .navigationTitle("Add a word")
+                    .navigationBarTitleDisplayMode(.inline)
                 }
-                .padding()
             })
         }
     }
