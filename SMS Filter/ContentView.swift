@@ -29,7 +29,7 @@ class FilteredWords: ObservableObject {
 
 struct ContentView: View {
     
-    @AppStorage("filteredWords", store: UserDefaults(suiteName: suiteName)) var data:Data = try! JSONEncoder().encode(["ar","st"])
+    @AppStorage("filteredWords", store: UserDefaults(suiteName: suiteName)) var data:Data = try! JSONEncoder().encode(["退订","TD","td"])
     
     @State var isShowingSheet = false
     @State var newWord: String = ""

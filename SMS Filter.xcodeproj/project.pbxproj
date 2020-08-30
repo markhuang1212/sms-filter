@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		866D7BA224F9E8640063608F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 866D7BA424F9E8640063608F /* Localizable.strings */; };
+		866D7BA824F9EB110063608F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 866D7BAA24F9EB110063608F /* InfoPlist.strings */; };
 		866EECB524F7602500DE4526 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866EECB424F7602500DE4526 /* AppDelegate.swift */; };
 		866EECB724F7602500DE4526 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866EECB624F7602500DE4526 /* SceneDelegate.swift */; };
 		866EECB924F7602500DE4526 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866EECB824F7602500DE4526 /* ContentView.swift */; };
@@ -42,6 +44,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		866D7BA324F9E8640063608F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		866D7BA524F9E93F0063608F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		866D7BA924F9EB110063608F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		866D7BAB24F9EB150063608F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		866EECB124F7602500DE4526 /* SMS Filter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SMS Filter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		866EECB424F7602500DE4526 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		866EECB624F7602500DE4526 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,9 +106,11 @@
 				866EECB424F7602500DE4526 /* AppDelegate.swift */,
 				866EECB624F7602500DE4526 /* SceneDelegate.swift */,
 				866EECB824F7602500DE4526 /* ContentView.swift */,
+				866D7BA424F9E8640063608F /* Localizable.strings */,
 				866EECBA24F7602700DE4526 /* Assets.xcassets */,
 				866EECBF24F7602700DE4526 /* LaunchScreen.storyboard */,
 				866EECC224F7602700DE4526 /* Info.plist */,
+				866D7BAA24F9EB110063608F /* InfoPlist.strings */,
 				866EECBC24F7602700DE4526 /* Preview Content */,
 			);
 			path = "SMS Filter";
@@ -189,6 +197,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 866EECA824F7602500DE4526;
 			productRefGroup = 866EECB224F7602500DE4526 /* Products */;
@@ -206,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				866D7BA224F9E8640063608F /* Localizable.strings in Resources */,
 				866EECC124F7602700DE4526 /* LaunchScreen.storyboard in Resources */,
 				866EECBE24F7602700DE4526 /* Preview Assets.xcassets in Resources */,
 				866EECBB24F7602700DE4526 /* Assets.xcassets in Resources */,
@@ -216,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				866D7BA824F9EB110063608F /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +262,24 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		866D7BA424F9E8640063608F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				866D7BA324F9E8640063608F /* en */,
+				866D7BA524F9E93F0063608F /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		866D7BAA24F9EB110063608F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				866D7BA924F9EB110063608F /* zh-Hans */,
+				866D7BAB24F9EB150063608F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		866EECBF24F7602700DE4526 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -266,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -327,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -25,9 +25,14 @@ extension MessageFilterExtension: ILMessageFilterQueryHandling {
 
     private func offlineAction(for queryRequest: ILMessageFilterQueryRequest) -> ILMessageFilterAction {
         // Replace with logic to perform offline check whether to filter first (if possible).
-//        let ud = UserDefaults(suiteName: suiteName)
         
-        let words = ["退订","TD"]
+        var words = ["退订","TD","td"]
+        
+        let ud = UserDefaults(suiteName: suiteName)
+        
+        if let words_user_raw = ud?.data(forKey: "filteredWords") {
+            words = try! JSONDecoder().decode([String].self, from: words_user_raw)
+        }
         
         for word in words {
             if queryRequest.messageBody?.contains(word) ?? false {

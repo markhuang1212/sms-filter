@@ -1,0 +1,14 @@
+/* 
+  Localized.strings
+  SMS Filter
+
+  Created by HUANGMENG on 29/8/2020.
+  
+*/
+
+"SMS Filter" = "短信过滤器";
+"Add Filter Item" = "添加规则";
+"New Filter" = "新规则";
+"Word to Filter" = "过滤内容";
+"Add" = "添加";
+"Cancel" = "取消";
