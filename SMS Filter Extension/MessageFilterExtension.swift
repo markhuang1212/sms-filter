@@ -24,7 +24,6 @@ extension MessageFilterExtension: ILMessageFilterQueryHandling {
     }
 
     private func offlineAction(for queryRequest: ILMessageFilterQueryRequest) -> ILMessageFilterAction {
-        // Replace with logic to perform offline check whether to filter first (if possible).
         
         var words = ["退订","TD","td"]
         
